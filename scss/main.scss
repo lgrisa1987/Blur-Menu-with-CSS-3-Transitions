@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: tahoma, sans-serif;
+    overflow: hidden;
+    font-weight: bold;
+    background: url(../bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bmenu {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover li a {
+        text-shadow: 0 0 1.5rem #fff;
+    }
+
+    li {
+        font-size: 5.5rem;
+        display: block;
+
+        a {
+            display: block;
+            white-space: nowrap;
+            color: transparent;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 0 0 .7rem #fff;
+            letter-spacing: 1px;
+            transform: scale(.5);
+            transition: text-shadow .7s linear, transform .7s linear;
+            text-decoration: none;
+
+            &:hover {
+                text-shadow: 0 0 .1rem #fff;
+                transform: scale(1);
+            }
+        }
+    }
+}
